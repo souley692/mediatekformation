@@ -16,7 +16,7 @@ class Formation
     /**
      * Début de chemin vers les images
      */
-    private const cheminImage = "https://i.ytimg.com/vi/";
+    const CHEMINGIMAGE = "https://i.ytimg.com/vi/";
     
     /**
      * @ORM\Id
@@ -81,8 +81,8 @@ class Formation
         if($this->publishedAt == null){
             return "";
         }
-        return $this->publishedAt->format('d/m/Y');     
-    }      
+        return $this->publishedAt->format('d/m/Y');
+    }
 
     public function getTitle(): ?string
     {
