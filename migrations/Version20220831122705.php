@@ -1,5 +1,5 @@
 <?php
-// Test
+// Test2
 declare(strict_types=1);
 
 namespace DoctrineMigrations;
